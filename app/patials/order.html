@@ -1,0 +1,31 @@
+<div ng-controller="orderCtrl">
+    <h2>下单</h2>
+    <div>
+        电话:
+        <input type="tel" ng-model="tel">
+    </div>
+    <div>
+        地址:
+        <input type="text" ng-model="addr">
+    </div>
+    <div>
+        收件人：
+        <input type="text" ng-model="name">
+    </div>
+    <div>
+        <p ng-repeat="item.zh for item in level.list"></p>
+    </div>
+    <button ng-click="generateOrder()">generateOrder</button>
+    cost:{{cost}} && number: {{number}}
+    <div ng-show="generated">
+        name:{{name}} </br>
+        tel:{{tel}} </br>
+        order:
+        <p ng-repeat="item in level.list">
+            {{item.zh}} * {{item.quantity}}
+        </p>
+        cost: {{cost}}
+    </div>
+    <div>
+    </div>
+</div>

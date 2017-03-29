@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="components
+/angular/angular.min.js"></script>
+    <script src="components/angular-route/angular-route.min.js"></script>
+    <script src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="components/wilddog/wilddog-web-all.js"></script>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<!-- 业务逻辑如下： -->
+<!-- 用户打开工具后，先判断用户是否登录，未登录显示login.html -->
+<!-- 登录显示下单页面 -->
+
+<body ng-app="order">
+    <div ng-controller="authCtrl">
+        <div ng-show="!logged">
+            手机号:
+            <input type="tel" ng-model="username" required=""> 密码:
+            <input type="password" ng-model="password" required="">
+            <button ng-click="createUser()" ng-show="!logged">注册</button>
+            <button ng-click="signin()" ng-show="!logged">登录</button>
+        </div>
+        <div ng-show="logged">登录成功啦，{{userid}}</div>
+        <button ng-click="logout()" ng-show="logged">退出</button>
+    </div>
+    <div ng-controller="infoCtrl">
+        <h2>设置个人信息</h2>
+        <ng-form name="userInfo" novalidate>
+            <div>
+                上级姓名：
+                <input type="text" name="leader" ng-model="leader" pattern="^[\u4E00-\u9FA5a-zA-Z]+">
+                <div class="alert alert-danger" ng-show="userInfo.leader.$error.pattern">
+                    不能为空
+                </div>
+            </div>
+            <div>
+                上级授权码:
+                <input type="text" name="source" ng-model="source" pattern="^KYB\d{9}$">
+                <div class="alert alert-danger" ng-show="userInfo.source.$error.pattern">
+                    授权码必须是KYB开头+9个数字组成
+                </div>
+            </div>
+            <div>
+                姓名:
+                <input type="text" name="name" ng-show="logged" ng-model="name" required="^[\u4E00-\u9FA5a-zA-Z]+">
+                <div class="alert alert-danger" ng-show="userInfo.name.$error.pattern">
+                    不能为空
+                </div>
+            </div>
+            <div>
+                授权码:
+                <input type="text" name="code" ng-model="code" pattern="^KYB\d{9}$">
+                <div class="alert alert-danger" ng-show="userInfo.code.$error.pattern">
+                    授权码必须是KYB开头+9个数字组成
+                </div>
+            </div>
+            <div>
+                级别:
+                <select name="level" ng-model="level" ng-options="level.zh for level in menu" ng-change="levelSelect(level)">
+                </select>
+            </div>
+            <div>
+                手机号:
+                <input type="tel" name="tel" ng-model="tel" pattern="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$">
+                <div class="alert alert-danger" ng-show="userInfo.tel.$error.pattern">
+                    手机号格式不正确
+                </div>
+            </div>
+            <div>
+                微信号:
+                <input type="text" name="wechat" ng-model="wechat" pattern="^[a-zA-Z0-9_-]{5,19}$">
+                <div class="alert alert-danger" ng-show="userInfo.wechat.$error.pattern">
+                    微信号格式不正确
+                </div>
+            </div>
+            <div>
+                地址:
+                <input type="text" name="addr" ng-model="addr">
+                <div class="alert alert-danger" ng-show="userInfo.addr.$error.required">
+                    不能为空
+                </div>
+            </div>
+            <button type="submit" ng-click="saveInfo()">保存修改</button>
+        </ng-form>
+    </div>
+    <nav>
+        <a href="#userinfo">账号设置</a>
+        <a href="#order">下单</a>
+        <a href="#history">历史订单</a>
+    </nav>
+    <div ng-view></div>
+    <script src="scripts/index.js?f0afafaf1"></script>
+</body>
+
+</html>

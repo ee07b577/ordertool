@@ -1,0 +1,22 @@
+{
+  "name": "ordertool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ee07b577/ordertool.git"
+  },
+  "author": "liangfangfang.110@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ee07b577/ordertool/issues"
+  },
+  "homepage": "https://github.com/ee07b577/ordertool#readme",
+  "dependencies": {
+    "angular": "^1.6.3"
+  }
+}
