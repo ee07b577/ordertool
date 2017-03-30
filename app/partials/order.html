@@ -1,0 +1,43 @@
+<div>
+    <h2>otherinfo</h2>
+    <div>
+        上级姓名：
+        <input type="text" name="leader" ng-model="leader" pattern="^[\u4E00-\u9FA5a-zA-Z]+">
+        <div class="alert alert-danger" ng-show="userInfo.leader.$error.pattern">
+            不能为空
+        </div>
+    </div>
+    <div>
+        授权码:
+        <input type="text" name="code" ng-model="code" pattern="^KYB\d{9}$">
+        <div class="alert alert-danger" ng-show="userInfo.code.$error.pattern">
+            授权码必须是KYB开头+9个数字组成
+        </div>
+    </div>
+    <div>
+        级别:
+        <select name="level" ng-model="level" ng-options="level.zh for level in menu" ng-change="levelSelect(level)">
+        </select>
+    </div>
+    <div>
+        姓名:
+        <input type="text" name="name" ng-model="name" required="^[\u4E00-\u9FA5a-zA-Z]+">
+        <div class="alert alert-danger" ng-show="userInfo.name.$error.pattern">
+            不能为空
+        </div>
+    </div>
+    <div>
+        手机号:
+        <input type="tel" name="tel" ng-model="tel" pattern="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$">
+        <div class="alert alert-danger" ng-show="userInfo.tel.$error.pattern">
+            手机号格式不正确
+        </div>
+    </div>
+    <div>
+        地址:
+        <input type="text" name="addr" ng-model="addr">
+        <div class="alert alert-danger" ng-show="userInfo.addr.$error.required">
+            不能为空
+        </div>
+    </div>
+</div>

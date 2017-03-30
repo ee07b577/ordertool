@@ -1,0 +1,14 @@
+<div ng-controller="signinCtrl" ng-form>
+    <p>
+        <label for="username">
+            用户名（手机号）
+            <input name="username" type="tel" ng-model="username" required>
+        </label>
+    </p>
+    <p>
+        <label for="password"> 密码:
+            <input name="password" type="password" ng-model="password" required>
+        </label>
+    </p>
+    <div class="btn btn-default" ng-click="signin()">确认</div>
+</div>

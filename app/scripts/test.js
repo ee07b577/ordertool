@@ -7,21 +7,13 @@
     var sync = wilddog.sync()
     var auth = wilddog.auth()
 
-    var app = angular.module('ordertool', ['ngRoute']);
-    app
-        .config(['$locationProvider', function($locationProvider) {
+    var app = angular.module('order', ['ngRoute']);
+
+    app.config(['$locationProvider', function($locationProvider) {
             $locationProvider.hashPrefix('');
         }])
         .config(function($routeProvider) {
             $routeProvider
-                .when('/signin', {
-                    templateUrl: './partials/signin.html',
-                    controller: 'authCtrl'
-                })
-                .when('/signup', {
-                    templateUrl: './partials/signup.html',
-                    controller: 'authCtrl'
-                })
                 .when('/userinfo', {
                     templateUrl: './partials/userinfo.html',
                     controller: 'infoCtrl'
@@ -36,10 +28,10 @@
                     controller: 'historyCtrl'
                 })
                 .otherwise({
-                    redirctTo: '/'
+                    redirctTo: '/userinfo'
                 })
         })
-        .controller('signinCtrl', function($scope, $rootScope) {
+        .controller('authCtrl', function($scope, $rootScope) {
 
             $scope.userid = ''
             $scope.logged = false;
@@ -112,9 +104,6 @@
             }
         })
         .controller('orderCtrl', function($scope, $rootScope) {
-
-        })
-        .service('getlogStatus', function() {
 
         })
 
