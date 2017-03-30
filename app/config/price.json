@@ -8,42 +8,42 @@
             "en": "r-z-nb",
             "zh": "纸尿裤NB码",
             "cost": 258,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-z-s",
             "zh": "纸尿裤S码",
             "cost": 264,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-z-m",
             "zh": "纸尿裤M码",
             "cost": 264,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-z-l",
             "zh": "纸尿裤L码",
             "cost": 264,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-z-xl",
             "zh": "纸尿裤XL码",
             "cost": 264,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-l-l",
             "zh": "拉拉裤L码",
             "cost": 252,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-l-xl",
             "zh": "拉拉裤XL码",
             "cost": 252,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "r-l-xxl",
             "zh": "拉拉裤XXL码",
             "cost": 252,
-            "allowed": true
+            "allowed": 10
         }]
     }, {
         "en": "sb",
@@ -52,37 +52,37 @@
             "en": "b-z-s",
             "zh": "纸尿裤S码",
             "cost": 279,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "b-z-m",
             "zh": "纸尿裤M码",
             "cost": 279,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "b-z-l",
             "zh": "纸尿裤L码",
             "cost": 279,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "b-z-xl",
             "zh": "纸尿裤XL码",
             "cost": 279,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "b-l-l",
             "zh": "拉拉裤L码",
             "cost": 272,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "b-l-xl",
             "zh": "拉拉裤XL码",
             "cost": 272,
-            "allowed": true
+            "allowed": 10
         }, {
             "en": "b-l-xxl",
             "zh": "拉拉裤XXL码",
             "cost": 272,
-            "allowed": true
+            "allowed": 10
         }]
     }, {
         "en": "fsp",
@@ -91,123 +91,847 @@
             "en": "xhehy",
             "zh": "洗护二合一",
             "cost": 600,
-            "allowed": true
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "htg",
+            "zh": "护臀膏",
+            "cost": 1296,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "zyms",
+            "zh": "滋养面霜",
+            "cost": 1800,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "zrms",
+            "zh": "滋润面霜",
+            "cost": 1440,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "w-mn",
+            "zh": "190MM迷你",
+            "cost": 526,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "w-ry",
+            "zh": "240MM日用",
+            "cost": 624,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "w-yy",
+            "zh": "280MM夜用",
+            "cost": 720,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "w-yyjc",
+            "zh": "400MM超长夜用",
+            "cost": 864,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "w-ask",
+            "zh": "安睡裤",
+            "cost": 360,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "xyy",
+            "zh": "洗衣液",
+            "cost": 83,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "dsj",
+            "zh": "大湿巾",
+            "cost": 36,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "xsj",
+            "zh": "小湿巾",
+            "cost": 54,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "rzj",
+            "zh": "柔纸巾",
+            "cost": 120,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "sy-r-z-s",
+            "zh": "试用装丝柔纸尿裤S",
+            "cost": 100,
+            "allowed": 10
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "sy-r-z-m",
+            "zh": "试用装丝柔纸尿裤M",
+            "cost": 100,
+            "allowed": 1
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "sy-r-z-l",
+            "zh": "试用装丝柔纸尿裤L",
+            "cost": 120,
+            "allowed": 1
         }, {
-            "en": "",
-            "zh": "",
-            "cost": ,
-            "allowed": true
+            "en": "sy-r-z-xl",
+            "zh": "试用装丝柔纸尿裤XL",
+            "cost": 130,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-l",
+            "zh": "试用装丝柔拉拉裤L",
+            "cost": 106.4,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xl",
+            "zh": "试用装丝柔拉拉裤XL",
+            "cost": 120.7,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xxl",
+            "zh": "试用装丝柔拉拉裤XXL",
+            "cost": 135,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-s",
+            "zh": "试用装丝薄纸尿裤S",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-m",
+            "zh": "试用装丝薄纸尿裤M",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-l",
+            "zh": "试用装丝薄纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-xl",
+            "zh": "试用装丝薄纸尿裤XL",
+            "cost": 130,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-l",
+            "zh": "试用装丝薄拉拉裤L",
+            "cost": 135,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-xl",
+            "zh": "试用装丝薄拉拉裤XL",
+            "cost": 145,
+            "allowed": 1
+        }, {
+            "en": "sy-b-l-xxl",
+            "zh": "试用装丝薄拉拉裤XXL",
+            "cost": 155,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-w-ry",
+            "zh": "试用装卫生巾日用",
+            "cost": 80,
+            "allowed": 1
         }]
     }]
 }, {
     "zh": "一级",
     "en": "yj",
-    "list": [{
-        "en": "r-z-nb",
-        "zh": "丝柔纸尿裤NB码",
-        "cost": 258
+    "price": [{
+        "en": "sr",
+        "zh": "丝柔系列",
+        "price": [{
+            "en": "r-z-nb",
+            "zh": "纸尿裤NB码",
+            "cost": 228,
+            "allowed": 10
+        }, {
+            "en": "r-z-s",
+            "zh": "纸尿裤S码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "r-z-m",
+            "zh": "纸尿裤M码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "r-z-l",
+            "zh": "纸尿裤L码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "r-z-xl",
+            "zh": "纸尿裤XL码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "r-l-l",
+            "zh": "拉拉裤L码",
+            "cost": 232,
+            "allowed": 10
+        }, {
+            "en": "r-l-xl",
+            "zh": "拉拉裤XL码",
+            "cost": 232,
+            "allowed": 10
+        }, {
+            "en": "r-l-xxl",
+            "zh": "拉拉裤XXL码",
+            "cost": 232,
+            "allowed": 10
+        }]
     }, {
-        "en": "r-z-s",
-        "zh": "丝柔纸尿裤S码",
-        "cost": 264
+        "en": "sb",
+        "zh": "丝薄系列",
+        "price": [{
+            "en": "b-z-s",
+            "zh": "纸尿裤S码",
+            "cost": 249,
+            "allowed": 10
+        }, {
+            "en": "b-z-m",
+            "zh": "纸尿裤M码",
+            "cost": 249,
+            "allowed": 10
+        }, {
+            "en": "b-z-l",
+            "zh": "纸尿裤L码",
+            "cost": 249,
+            "allowed": 10
+        }, {
+            "en": "b-z-xl",
+            "zh": "纸尿裤XL码",
+            "cost": 249,
+            "allowed": 10
+        }, {
+            "en": "b-l-l",
+            "zh": "拉拉裤L码",
+            "cost": 252,
+            "allowed": 10
+        }, {
+            "en": "b-l-xl",
+            "zh": "拉拉裤XL码",
+            "cost": 252,
+            "allowed": 10
+        }, {
+            "en": "b-l-xxl",
+            "zh": "拉拉裤XXL码",
+            "cost": 252,
+            "allowed": 10
+        }]
     }, {
-        "en": "r-z-m",
-        "zh": "丝柔纸尿裤M码",
-        "cost": 264
+        "en": "fsp",
+        "zh": "附属品",
+        "price": [{
+            "en": "xhehy",
+            "zh": "洗护二合一",
+            "cost": 552,
+            "allowed": 10
+        }, {
+            "en": "htg",
+            "zh": "护臀膏",
+            "cost": 1152,
+            "allowed": 10
+        }, {
+            "en": "zyms",
+            "zh": "滋养面霜",
+            "cost": 1656,
+            "allowed": 10
+        }, {
+            "en": "zrms",
+            "zh": "滋润面霜",
+            "cost": 1296,
+            "allowed": 10
+        }, {
+            "en": "w-mn",
+            "zh": "190MM迷你",
+            "cost": 480,
+            "allowed": 10
+        }, {
+            "en": "w-ry",
+            "zh": "240MM日用",
+            "cost": 576,
+            "allowed": 10
+        }, {
+            "en": "w-yy",
+            "zh": "280MM夜用",
+            "cost": 672,
+            "allowed": 10
+        }, {
+            "en": "w-yyjc",
+            "zh": "400MM超长夜用",
+            "cost": 816,
+            "allowed": 10
+        }, {
+            "en": "w-ask",
+            "zh": "安睡裤",
+            "cost": 330,
+            "allowed": 10
+        }, {
+            "en": "xyy",
+            "zh": "洗衣液",
+            "cost": 73,
+            "allowed": 10
+        }, {
+            "en": "dsj",
+            "zh": "大湿巾",
+            "cost": 36,
+            "allowed": 10
+        }, {
+            "en": "xsj",
+            "zh": "小湿巾",
+            "cost": 52,
+            "allowed": 10
+        }, {
+            "en": "rzj",
+            "zh": "柔纸巾",
+            "cost": 115,
+            "allowed": 10
+        }, {
+            "en": "sy-r-z-s",
+            "zh": "试用装丝柔纸尿裤S",
+            "cost": 100,
+            "allowed": 10
+        }, {
+            "en": "sy-r-z-m",
+            "zh": "试用装丝柔纸尿裤M",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-r-z-l",
+            "zh": "试用装丝柔纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-r-z-xl",
+            "zh": "试用装丝柔纸尿裤XL",
+            "cost": 130,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-l",
+            "zh": "试用装丝柔拉拉裤L",
+            "cost": 106.4,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xl",
+            "zh": "试用装丝柔拉拉裤XL",
+            "cost": 120.7,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xxl",
+            "zh": "试用装丝柔拉拉裤XXL",
+            "cost": 135,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-s",
+            "zh": "试用装丝薄纸尿裤S",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-m",
+            "zh": "试用装丝薄纸尿裤M",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-l",
+            "zh": "试用装丝薄纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-xl",
+            "zh": "试用装丝薄纸尿裤XL",
+            "cost": 130,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-l",
+            "zh": "试用装丝薄拉拉裤L",
+            "cost": 135,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-xl",
+            "zh": "试用装丝薄拉拉裤XL",
+            "cost": 145,
+            "allowed": 1
+        }, {
+            "en": "sy-b-l-xxl",
+            "zh": "试用装丝薄拉拉裤XXL",
+            "cost": 155,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-w-ry",
+            "zh": "试用装卫生巾日用",
+            "cost": 80,
+            "allowed": 1
+        }]
+    }]
+}, {
+    "zh": "总代",
+    "en": "zd",
+    "price": [{
+        "en": "sr",
+        "zh": "丝柔系列",
+        "price": [{
+            "en": "r-z-nb",
+            "zh": "纸尿裤NB码",
+            "cost": 213,
+            "allowed": 10
+        }, {
+            "en": "r-z-s",
+            "zh": "纸尿裤S码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "r-z-m",
+            "zh": "纸尿裤M码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "r-z-l",
+            "zh": "纸尿裤L码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "r-z-xl",
+            "zh": "纸尿裤XL码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "r-l-l",
+            "zh": "拉拉裤L码",
+            "cost": 212,
+            "allowed": 10
+        }, {
+            "en": "r-l-xl",
+            "zh": "拉拉裤XL码",
+            "cost": 212,
+            "allowed": 10
+        }, {
+            "en": "r-l-xxl",
+            "zh": "拉拉裤XXL码",
+            "cost": 212,
+            "allowed": 10
+        }]
     }, {
-        "en": "r-z-l",
-        "zh": "丝柔纸尿裤L码",
-        "cost": 264
+        "en": "sb",
+        "zh": "丝薄系列",
+        "price": [{
+            "en": "b-z-s",
+            "zh": "纸尿裤S码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "b-z-m",
+            "zh": "纸尿裤M码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "b-z-l",
+            "zh": "纸尿裤L码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "b-z-xl",
+            "zh": "纸尿裤XL码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "b-l-l",
+            "zh": "拉拉裤L码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "b-l-xl",
+            "zh": "拉拉裤XL码",
+            "cost": 234,
+            "allowed": 10
+        }, {
+            "en": "b-l-xxl",
+            "zh": "拉拉裤XXL码",
+            "cost": 234,
+            "allowed": 10
+        }]
     }, {
-        "en": "r-z-xl",
-        "zh": "丝柔纸尿裤XL码",
-        "cost": 264
+        "en": "fsp",
+        "zh": "附属品",
+        "price": [{
+            "en": "xhehy",
+            "zh": "洗护二合一",
+            "cost": 504,
+            "allowed": 10
+        }, {
+            "en": "htg",
+            "zh": "护臀膏",
+            "cost": 1008,
+            "allowed": 10
+        }, {
+            "en": "zyms",
+            "zh": "滋养面霜",
+            "cost": 1512,
+            "allowed": 10
+        }, {
+            "en": "zrms",
+            "zh": "滋润面霜",
+            "cost": 1188,
+            "allowed": 10
+        }, {
+            "en": "w-mn",
+            "zh": "190MM迷你",
+            "cost": 384,
+            "allowed": 10
+        }, {
+            "en": "w-ry",
+            "zh": "240MM日用",
+            "cost": 480,
+            "allowed": 10
+        }, {
+            "en": "w-yy",
+            "zh": "280MM夜用",
+            "cost": 576,
+            "allowed": 10
+        }, {
+            "en": "w-yyjc",
+            "zh": "400MM超长夜用",
+            "cost": 720,
+            "allowed": 10
+        }, {
+            "en": "w-ask",
+            "zh": "安睡裤",
+            "cost": 270,
+            "allowed": 10
+        }, {
+            "en": "xyy",
+            "zh": "洗衣液",
+            "cost": 68,
+            "allowed": 10
+        }, {
+            "en": "dsj",
+            "zh": "大湿巾",
+            "cost": 36,
+            "allowed": 10
+        }, {
+            "en": "xsj",
+            "zh": "小湿巾",
+            "cost": 51,
+            "allowed": 10
+        }, {
+            "en": "rzj",
+            "zh": "柔纸巾",
+            "cost": 110,
+            "allowed": 10
+        }, {
+            "en": "sy-r-z-s",
+            "zh": "试用装丝柔纸尿裤S",
+            "cost": 10,
+            "allowed": 10
+        }, {
+            "en": "sy-r-z-m",
+            "zh": "试用装丝柔纸尿裤M",
+            "cost": 10,
+            "allowed": 1
+        }, {
+            "en": "sy-r-z-l",
+            "zh": "试用装丝柔纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-r-z-xl",
+            "zh": "试用装丝柔纸尿裤XL",
+            "cost": 130,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-l",
+            "zh": "试用装丝柔拉拉裤L",
+            "cost": 106.4,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xl",
+            "zh": "试用装丝柔拉拉裤XL",
+            "cost": 120.7,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xxl",
+            "zh": "试用装丝柔拉拉裤XXL",
+            "cost": 135,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-s",
+            "zh": "试用装丝薄纸尿裤S",
+            "cost": 10,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-m",
+            "zh": "试用装丝薄纸尿裤M",
+            "cost": 10,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-l",
+            "zh": "试用装丝薄纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-xl",
+            "zh": "试用装丝薄纸尿裤XL",
+            "cost": 130,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-l",
+            "zh": "试用装丝薄拉拉裤L",
+            "cost": 135,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-xl",
+            "zh": "试用装丝薄拉拉裤XL",
+            "cost": 145,
+            "allowed": 1
+        }, {
+            "en": "sy-b-l-xxl",
+            "zh": "试用装丝薄拉拉裤XXL",
+            "cost": 155,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-w-ry",
+            "zh": "试用装卫生巾日用",
+            "cost": 80,
+            "allowed": 1
+        }]
+    }]
+}, {
+    "zh": "钻石总代",
+    "en": "zszd",
+    "price": [{
+        "en": "sr",
+        "zh": "丝柔系列",
+        "price": [{
+            "en": "r-z-nb",
+            "zh": "纸尿裤NB码",
+            "cost": 198,
+            "allowed": 10
+        }, {
+            "en": "r-z-s",
+            "zh": "纸尿裤S码",
+            "cost": 204,
+            "allowed": 10
+        }, {
+            "en": "r-z-m",
+            "zh": "纸尿裤M码",
+            "cost": 204,
+            "allowed": 10
+        }, {
+            "en": "r-z-l",
+            "zh": "纸尿裤L码",
+            "cost": 204,
+            "allowed": 10
+        }, {
+            "en": "r-z-xl",
+            "zh": "纸尿裤XL码",
+            "cost": 204,
+            "allowed": 10
+        }, {
+            "en": "r-l-l",
+            "zh": "拉拉裤L码",
+            "cost": 192,
+            "allowed": 10
+        }, {
+            "en": "r-l-xl",
+            "zh": "拉拉裤XL码",
+            "cost": 192,
+            "allowed": 10
+        }, {
+            "en": "r-l-xxl",
+            "zh": "拉拉裤XXL码",
+            "cost": 192,
+            "allowed": 10
+        }]
     }, {
-        "en": "r-l-l",
-        "zh": "丝柔拉拉裤L码",
-        "cost": 252
+        "en": "sb",
+        "zh": "丝薄系列",
+        "price": [{
+            "en": "b-z-s",
+            "zh": "纸尿裤S码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "b-z-m",
+            "zh": "纸尿裤M码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "b-z-l",
+            "zh": "纸尿裤L码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "b-z-xl",
+            "zh": "纸尿裤XL码",
+            "cost": 219,
+            "allowed": 10
+        }, {
+            "en": "b-l-l",
+            "zh": "拉拉裤L码",
+            "cost": 212,
+            "allowed": 10
+        }, {
+            "en": "b-l-xl",
+            "zh": "拉拉裤XL码",
+            "cost": 212,
+            "allowed": 10
+        }, {
+            "en": "b-l-xxl",
+            "zh": "拉拉裤XXL码",
+            "cost": 212,
+            "allowed": 10
+        }]
     }, {
-        "en": "r-l-xl",
-        "zh": "丝柔拉拉裤XL码",
-        "cost": 252
-    }, {
-        "en": "r-l-xxl",
-        "zh": "丝柔拉拉裤XXL码",
-        "cost": 252
+        "en": "fsp",
+        "zh": "附属品",
+        "price": [{
+            "en": "xhehy",
+            "zh": "洗护二合一",
+            "cost": 456,
+            "allowed": 10
+        }, {
+            "en": "htg",
+            "zh": "护臀膏",
+            "cost": 864,
+            "allowed": 10
+        }, {
+            "en": "zyms",
+            "zh": "滋养面霜",
+            "cost": 1368,
+            "allowed": 10
+        }, {
+            "en": "zrms",
+            "zh": "滋润面霜",
+            "cost": 1080,
+            "allowed": 10
+        }, {
+            "en": "w-mn",
+            "zh": "190MM迷你",
+            "cost": 336,
+            "allowed": 10
+        }, {
+            "en": "w-ry",
+            "zh": "240MM日用",
+            "cost": 432,
+            "allowed": 10
+        }, {
+            "en": "w-yy",
+            "zh": "280MM夜用",
+            "cost": 528,
+            "allowed": 10
+        }, {
+            "en": "w-yyjc",
+            "zh": "400MM超长夜用",
+            "cost": 672,
+            "allowed": 10
+        }, {
+            "en": "w-ask",
+            "zh": "安睡裤",
+            "cost": 240,
+            "allowed": 10
+        }, {
+            "en": "xyy",
+            "zh": "洗衣液",
+            "cost": 63,
+            "allowed": 10
+        }, {
+            "en": "dsj",
+            "zh": "大湿巾",
+            "cost": 36,
+            "allowed": 10
+        }, {
+            "en": "xsj",
+            "zh": "小湿巾",
+            "cost": 50,
+            "allowed": 10
+        }, {
+            "en": "rzj",
+            "zh": "柔纸巾",
+            "cost": 105,
+            "allowed": 10
+        }, {
+            "en": "sy-r-z-s",
+            "zh": "试用装丝柔纸尿裤S",
+            "cost": 100,
+            "allowed": 10
+        }, {
+            "en": "sy-r-z-m",
+            "zh": "试用装丝柔纸尿裤M",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-r-z-l",
+            "zh": "试用装丝柔纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-r-z-xl",
+            "zh": "试用装丝柔纸尿裤XL",
+            "cost": 130,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-l",
+            "zh": "试用装丝柔拉拉裤L",
+            "cost": 106.4,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xl",
+            "zh": "试用装丝柔拉拉裤XL",
+            "cost": 120.7,
+            "allowed": 1
+        }, {
+            "en": "sy-r-l-xxl",
+            "zh": "试用装丝柔拉拉裤XXL",
+            "cost": 135,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-s",
+            "zh": "试用装丝薄纸尿裤S",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-m",
+            "zh": "试用装丝薄纸尿裤M",
+            "cost": 100,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-l",
+            "zh": "试用装丝薄纸尿裤L",
+            "cost": 120,
+            "allowed": 1
+        }, {
+            "en": "sy-b-z-xl",
+            "zh": "试用装丝薄纸尿裤XL",
+            "cost": 130,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-l",
+            "zh": "试用装丝薄拉拉裤L",
+            "cost": 135,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-b-l-xl",
+            "zh": "试用装丝薄拉拉裤XL",
+            "cost": 145,
+            "allowed": 1
+        }, {
+            "en": "sy-b-l-xxl",
+            "zh": "试用装丝薄拉拉裤XXL",
+            "cost": 155,
+            "allowed": 0,
+            "msg": "未生产"
+        }, {
+            "en": "sy-w-ry",
+            "zh": "试用装卫生巾日用",
+            "cost": 80,
+            "allowed": 1
+        }]
     }]
 }]
