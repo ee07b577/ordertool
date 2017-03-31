@@ -31,7 +31,7 @@
         </div>
         <div>
             级别:
-            <select name="level" ng-model="level" ng-options="level.zh for level in menu" ng-change="levelSelect(level)">
+            <select name="level" ng-model="level" ng-options="i for (i,level) in pricelist">
             </select>
         </div>
         <div>

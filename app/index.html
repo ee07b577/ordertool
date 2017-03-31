@@ -11,7 +11,7 @@
     <script src="components/wilddog/wilddog-web-all.js"></script>
 </head>
 
-<body ng-app="ordertool">
+<body ng-app="ordertool" ng-controller="ordertoolCtrl">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -22,7 +22,7 @@
                     <a href="#/signin" class='btn btn-default navbar-btn pull-right' ng-show="!logged">登录</a>
                     <a href="#/signup" class='btn btn-default navbar-btn pull-right' ng-show="!logged">注册</a>
                     <a href="#/userinfo" class='btn btn-default navbar-btn pull-right' ng-show="logged">设置用户信息</a>
-                    <a class='btn btn-default navbar-btn  pull-right' ng-show="logged">退出</a>
+                    <a class='btn btn-default navbar-btn  pull-right' ng-show="logged" ng-click="logout()">退出</a>
                 </div>
             </div>
         </div>

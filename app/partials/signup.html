@@ -1,19 +1,19 @@
-<div>
+<div ng-controller="signupCtrl">
     <p>
         <label for="username">
             用户名（手机号）
-            <input name="username" type="tel" ng-model="username" required="">
+            <input name="username" type="tel" ng-model="username" required>
         </label>
     </p>
     <p>
         <label for="password"> 密码:
-            <input name="password" type="password" ng-model="password" required="">
+            <input name="password" type="password" ng-model="password" required>
         </label>
     </p>
     <p>
         <label for="passwordconfirm"> 确认密码:
-            <input name="passwordconfirm" type="password" ng-model="passwordconfirm" required="">
+            <input name="passwordconfirm" type="password" ng-model="passwordconfirm" required>
         </label>
     </p>
-    <div class="btn btn-default">确认</div>
+    <div class="btn btn-default" ng-click="signup()">确认</div>
 </div>

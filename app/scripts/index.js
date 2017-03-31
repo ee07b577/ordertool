@@ -16,11 +16,11 @@
             $routeProvider
                 .when('/signin', {
                     templateUrl: './partials/signin.html',
-                    controller: 'authCtrl'
+                    controller: 'signinCtrl'
                 })
                 .when('/signup', {
                     templateUrl: './partials/signup.html',
-                    controller: 'authCtrl'
+                    controller: 'signupCtrl'
                 })
                 .when('/userinfo', {
                     templateUrl: './partials/userinfo.html',
@@ -35,67 +35,56 @@
                     templateUrl: './partials/history.html',
                     controller: 'historyCtrl'
                 })
+                .when('/caculator', {
+                    templateUrl: './partials/caculator.html',
+                    controller: 'caculatorCtrl'
+                })
                 .otherwise({
                     redirctTo: '/'
                 })
         })
-        .controller('signinCtrl', function($scope, $rootScope) {
+        .controller('ordertoolCtrl', function($scope, $location, authService) {
 
-            $scope.userid = ''
             $scope.logged = false;
 
-            $scope.createUser = function() {
-                auth.createUserWithPhoneAndPassword($scope.username, $scope.password)
-                    .then(function(user) {
-                        userid = user.uid;
-                        $scope.$apply(function() {
-                            $scope.userid = user.uid
-                            $scope.logged = true;
-                        })
-                    })
+            $scope.logged = function() {
+                authService.logout()
             }
 
-            $scope.signin = function() {
-                auth.signInWithPhoneAndPassword($scope.username, $scope.password)
-                    .then(function(user) {
-                        $scope.userid = user.uid
-                        $scope.$apply(function() {
-                            $scope.userid = user.uid
-                            $scope.logged = true;
-                        })
-                    })
+            $scope.$on('authStatusChanged', function() {
+                if (!$scope.logged) {
+                    // TODO 登录失效，则刷新页面
+                    // $location.url('/');
 
-            }
+                }
+                $scope.$broadcast('authStatusChanged');
+            })
 
-            $scope.logout = function() {
-                auth.signOut().then(function() {
-                    console.log('logout!')
-                    $scope.$apply(function() {
-                        $scope.logged = false;
-                    })
+            $scope.pricelist = [{ 'zh': '2' }, { 'zh': 'sfs' }]
+
+            sync.ref('/pricelist').on('value', function(snapshot) {
+                $scope.$apply(function() {
+                    $scope.pricelist = snapshot.val();
+                    console.log($scope.pricelist)
                 })
+
+            })
+
+        })
+        .controller('signinCtrl', function($scope, authService) {
+            $scope.signin = function() {
+                authService.signin($scope.username, $scope.password)
             }
         })
-        .controller('infoCtrl', function($scope, $http) {
+        .controller('signupCtrl', function($scope, authService) {
+            // todo : 验证 密码 和 确认密码 是一样的
+            $scope.signin = authService.signup($scope.username, $scope.password)
+        })
+        .controller('infoCtrl', function($scope) {
 
-            $http({
-                method: 'get',
-                url: './config/menu.json?shff',
-            }).then(function successCallback(response) {
-                $scope.menu = response.data;
-                sync.ref('menu').set(response.data);
-            }, function errorCallback(res) {
-                console.log(res)
-            });
-
-
-            $scope.levelSelect = function(level) {
-                // console.log(level)
-                // console.log($scope.level)
-            }
-
+            $scope.pricelist = [{ 'zh': '2' }, { 'zh': 'sfs' }]
+            console.log($scope.pricelist)
             $scope.saveInfo = function() {
-
                 var userinfo = {
                     "leader": $scope.leader,
                     "source": $scope.source,
@@ -114,7 +103,70 @@
         .controller('orderCtrl', function($scope, $rootScope) {
 
         })
-        .service('getlogStatus', function() {
+        .factory('authService', function($http, $rootScope) {
+
+            var authService = {}
+
+            authService.signin = function(email, password) {
+
+                auth.signInWithPhoneAndPassword(email, password)
+                    .then(function(user) {
+                        $rootScope.$apply(function() {
+                            $rootScope.userid = user.uid;
+                            $rootScope.logged = true;
+                        })
+                    }, function(err) {
+                        alert('登录失败')
+                        console.log(err)
+                    })
+
+
+            }
+            authService.signup = function(email, password) {
+
+                auth.createUserWithPhoneAndPassword(email, password)
+                    .then(function(user) {
+                        $rootScope.$apply(function() {
+                            $rootScope.userid = user.uid;
+                            $rootScope.logged = true;
+                        })
+                        alert('注册成功')
+                    }, function(err) {
+                        console.log(err)
+                    })
+
+
+            }
+
+            authService.logout = function() {
+                auth.signOut()
+                    .then(function() {
+                        console.log('logout!')
+                        $rootScope.$apply(function() {
+                            $rootScope.logged = false;
+                        })
+                    }, function(err) {
+                        console.log(err)
+                    })
+            }
+
+            authService.checkStatus = function() {
+                return $rootScope.logged;
+            }
+
+            var stopListen = auth.onAuthStateChanged(function(user) {
+                console.log('auth state changed ->', user);
+                if (user) {
+                    $rootScope.logged = true;
+                    alert('登录成功')
+                } else {
+                    $rootScope.logged = false;
+                }
+
+            });
+
+            return authService;
+
 
         })
 
